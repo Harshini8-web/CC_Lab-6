@@ -30,7 +30,7 @@ pipeline {
                 sh '''
                 docker run -d --name nginx-lb \
                 --network lab-net \
-                -p 80:80 nginx
+                -p 8081:80 nginx
 
                 sleep 2
 
@@ -48,3 +48,4 @@ pipeline {
         }
     }
 }
+
